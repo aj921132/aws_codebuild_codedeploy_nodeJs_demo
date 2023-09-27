@@ -23,3 +23,5 @@ spec:
           name: cicd-demo
           ports:
             - containerPort: 3000
+      imagePullSecrets:
+         - name: regcred      
