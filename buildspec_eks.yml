@@ -50,3 +50,4 @@ phases:
       - kubectl apply -f eks_cicd/deployment.yaml
       - kubectl apply -f eks_cicd/service.yaml
       - kubectl rollout restart -f eks_cicd/deployment.yaml
+      - kubectl get svc --no-headers | head -n+1 | awk '{ print $4 }'
