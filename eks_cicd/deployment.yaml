@@ -18,7 +18,7 @@ spec:
         app: cicd-demo
     spec:
       containers:
-        - image: $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
+        - image: 318119590361.dkr.ecr.us-west-1.amazonaws.com/eks-devops-nginx:latest
           imagePullPolicy: Always
           name: cicd-demo
           ports:
