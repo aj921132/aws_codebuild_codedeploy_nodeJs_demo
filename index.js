@@ -5,7 +5,7 @@ const config = require('config')
 console.log(config);
 
 app.get('/', (req, res) => {
-  res.send('Hello World! from cloud aws Tech ete demo ci-cd')
+  res.send('Hello World! from cloud aws Tech ete demo ci-cd pipeline')
 })
 
 app.get('/status', (req, res) => {
